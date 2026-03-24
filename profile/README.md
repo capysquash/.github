@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/CAPYSQUASH/capysquash-platform/main/public/icons/icon0.svg" alt="CapySquash" width="84" height="84" />
-
+  
   [![Website](https://img.shields.io/badge/Website-capysquash.dev-0F172A?style=for-the-badge)](https://capysquash.dev)
   [![Platform](https://img.shields.io/badge/platform-next.js-000000?style=for-the-badge&logo=nextdotjs)](https://github.com/CAPYSQUASH/capysquash-platform)
   [![CLI](https://img.shields.io/badge/cli-go-00ADD8?style=for-the-badge&logo=go)](https://github.com/CAPYSQUASH/capysquash-cli)
