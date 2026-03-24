@@ -177,6 +177,6 @@ Contributions are welcome across the ecosystem.
   [![Website](https://img.shields.io/badge/Website-capysquash.dev-f97316?style=for-the-badge)](https://capysquash.dev)
   [![Docs](https://img.shields.io/badge/Docs-GitHub%20Docs-0EA5E9?style=for-the-badge)](https://github.com/CAPYSQUASH/capysquash-docs)
 
-  <br />
+  <br/>
   <sub>Built by the CapySquash team 🟧</sub>
 </div>
