@@ -1,64 +1,79 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/CAPYSQUASH/capysquash-platform/main/public/icons/icon0.svg" alt="CapySquash" width="80" height="80" />
+  <img src="https://raw.githubusercontent.com/CAPYSQUASH/capysquash-platform/main/public/icons/icon0.svg" alt="CapySquash" width="84" height="84" />
+
+  [![Website](https://img.shields.io/badge/Website-capysquash.dev-0F172A?style=for-the-badge)](https://capysquash.dev)
+  [![Platform](https://img.shields.io/badge/platform-next.js-000000?style=for-the-badge&logo=nextdotjs)](https://github.com/CAPYSQUASH/capysquash-platform)
+  [![CLI](https://img.shields.io/badge/cli-go-00ADD8?style=for-the-badge&logo=go)](https://github.com/CAPYSQUASH/capysquash-cli)
+  [![API](https://img.shields.io/badge/api-go-00ADD8?style=for-the-badge&logo=go)](https://github.com/CAPYSQUASH/capysquash-api)
 
   # CAPYSQUASH
 
-  **From migration clutter to clean, shippable history.**
+  **The modern platform for Postgres migration cleanup.**
 
-  [![Platform](https://img.shields.io/badge/Platform-Next.js-000000?style=flat-square&logo=nextdotjs)](https://github.com/CAPYSQUASH/capysquash-platform)
-  [![CLI](https://img.shields.io/badge/CLI-Go-00ADD8?style=flat-square&logo=go)](https://github.com/CAPYSQUASH/capysquash-cli)
-  [![API](https://img.shields.io/badge/API-Go-00ADD8?style=flat-square&logo=go)](https://github.com/CAPYSQUASH/capysquash-api)
-  [![Engine](https://img.shields.io/badge/Engine-pgsquash--engine-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/CAPYSQUASH/pgsquash-engine)
-  [![Docs](https://img.shields.io/badge/Docs-Fumadocs-0EA5E9?style=flat-square)](https://github.com/CAPYSQUASH/capysquash-docs)
+  [![Engine](https://img.shields.io/badge/engine-pgsquash--engine-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/CAPYSQUASH/pgsquash-engine)
+  [![Studio](https://img.shields.io/badge/studio-typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/CAPYSQUASH/capysquash-studio)
+  [![VS Code](https://img.shields.io/badge/vscode-extension-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)](https://github.com/CAPYSQUASH/capysquash-vscode)
+  [![Docs](https://img.shields.io/badge/docs-fumadocs-0EA5E9?style=flat-square)](https://github.com/CAPYSQUASH/capysquash-docs)
 </div>
 
 ---
 
-## Why CapySquash exists
+## Overview
 
-Databases don’t usually break in one dramatic moment.
-They drift.
+**CapySquash** turns migration sprawl into clean, reviewable, deployable SQL history.
 
-One migration here, one hotfix there, one “we’ll clean it later” at 2 a.m.—and suddenly shipping schema changes feels like defusing a bomb with a sticky note.
+Built for indie hackers, startup teams, and fast-moving product devs who want to ship database changes with less risk and less ceremony.
 
-**CapySquash is built to fix that feeling.**
+**Why teams use it:**
+- Keep migration history lean and maintainable
+- Catch risky changes before they reach production
+- Use the same core behavior across platform, CLI, API, and editor tooling
 
-We help developers consolidate migration debt, reduce risk, and ship faster with clearer SQL history and safer workflows.
-
-## The product model (intentionally simple)
-
-CapySquash is the primary product and brand.
-
-- **`capysquash-platform`** is the main experience (dashboard + automation).
-- **`capysquash-cli`** and **`capysquash-api`** are supporting surfaces.
-- **`pgsquash-engine`** is the core technology under the hood.
-
-Different entrypoints. One system.
-
-## What you get
+## Key capabilities
 
 <table>
 <tr>
 <td width="50%">
 
-### ✅ Safer database changes
-- Analyze before you apply
-- Catch risky migration patterns early
-- Keep schema evolution reviewable
-- Build confidence from local to production
+### Platform experience
+- One-click cleanup workflows
+- Project-level visibility and orchestration
+- Team-friendly operational surface
+
+### Developer velocity
+- Terminal-first CLI for power users
+- API-first integration for automation
+- VS Code and studio surfaces for day-to-day flow
 
 </td>
 <td width="50%">
 
-### ⚡ Faster shipping loops
-- Platform + CLI + API stay aligned
-- Automation-ready workflows for teams and solo devs
-- Shared engine behavior across every surface
-- Docs that map to how people actually build
+### Safety and confidence
+- Parser-grade migration analysis
+- Risk-aware validation before apply
+- Consistent behavior from local to CI to production
+
+### Ecosystem alignment
+- Shared engine across products
+- Cohesive docs and workflows
+- No duplicated logic across surfaces
 
 </td>
 </tr>
 </table>
+
+## Tech stack
+
+<div align="center">
+
+| Technology | Role |
+|---|---|
+| ![Next.js](https://img.shields.io/badge/Next.js-Platform-000000?style=for-the-badge&logo=nextdotjs) | Platform application |
+| ![Go](https://img.shields.io/badge/Go-Engine%20%2B%20API-00ADD8?style=for-the-badge&logo=go&logoColor=white) | CLI, API, and core execution |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Core-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | Migration and schema domain |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-UI%20Surfaces-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | Studio, VS Code, and frontend surfaces |
+
+</div>
 
 ## Ecosystem map
 
@@ -91,11 +106,32 @@ Different entrypoints. One system.
 |---|---|
 | [`capydb`](https://github.com/CAPYSQUASH/capydb) | Framework-native Postgres initiative adjacent to the ecosystem |
 
-## How work flows through CapySquash
+## Quick flow
 
-1. **Prepare** changes in your local workflow (CLI/editor/platform).
-2. **Analyze** and validate through API + engine capabilities.
-3. **Ship** with clearer history, better guardrails, and fewer surprises.
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://api.iconify.design/lucide:folder-git-2.svg?color=%23f97316" width="44" /><br/>
+<strong>1. Connect</strong><br/>
+Bring your migration history
+</td>
+<td align="center" width="25%">
+<img src="https://api.iconify.design/lucide:scan-search.svg?color=%23f97316" width="44" /><br/>
+<strong>2. Analyze</strong><br/>
+Detect drift and risky patterns
+</td>
+<td align="center" width="25%">
+<img src="https://api.iconify.design/lucide:layers-2.svg?color=%23f97316" width="44" /><br/>
+<strong>3. Squash</strong><br/>
+Consolidate into cleaner SQL
+</td>
+<td align="center" width="25%">
+<img src="https://api.iconify.design/lucide:rocket.svg?color=%23f97316" width="44" /><br/>
+<strong>4. Ship</strong><br/>
+Deploy with confidence
+</td>
+</tr>
+</table>
 
 ## Where to start
 
@@ -106,9 +142,30 @@ Different entrypoints. One system.
 | Integrate over HTTP | [`capysquash-api/README.md`](https://github.com/CAPYSQUASH/capysquash-api/blob/main/README.md) |
 | Explore full documentation | [`capysquash-docs`](https://github.com/CAPYSQUASH/capysquash-docs) |
 
+## Documentation
+
+<div align="center">
+
+| Resource | Link |
+|---|---|
+| Platform docs | [capysquash-platform/README.md](https://github.com/CAPYSQUASH/capysquash-platform/blob/main/README.md) |
+| CLI getting started | [capysquash-cli/GETTING_STARTED.md](https://github.com/CAPYSQUASH/capysquash-cli/blob/main/GETTING_STARTED.md) |
+| API docs | [capysquash-api/docs](https://github.com/CAPYSQUASH/capysquash-api/tree/main/docs) |
+| Ecosystem docs repo | [capysquash-docs](https://github.com/CAPYSQUASH/capysquash-docs) |
+
+</div>
+
 ## Contributing
 
 Contributions are welcome across the ecosystem.
+
+<div align="center">
+
+[![Contributors](https://img.shields.io/github/contributors/CAPYSQUASH/capysquash-cli.svg?logo=github)](https://github.com/CAPYSQUASH/capysquash-cli/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/CAPYSQUASH/capysquash-platform.svg?logo=github)](https://github.com/CAPYSQUASH/capysquash-platform/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/CAPYSQUASH/capysquash-platform.svg?logo=github)](https://github.com/CAPYSQUASH/capysquash-platform/pulls)
+
+</div>
 
 - Contribution guide: [`capysquash-cli/CONTRIBUTING.md`](https://github.com/CAPYSQUASH/capysquash-cli/blob/main/CONTRIBUTING.md)
 - Security policy: [`capysquash-cli/SECURITY.md`](https://github.com/CAPYSQUASH/capysquash-cli/blob/main/SECURITY.md)
@@ -116,5 +173,9 @@ Contributions are welcome across the ecosystem.
 ---
 
 <div align="center">
+  [![Website](https://img.shields.io/badge/Website-capysquash.dev-f97316?style=for-the-badge)](https://capysquash.dev)
+  [![Docs](https://img.shields.io/badge/Docs-GitHub%20Docs-0EA5E9?style=for-the-badge)](https://github.com/CAPYSQUASH/capysquash-docs)
+
+  <br />
   <sub>Built by the CapySquash team 🟧</sub>
 </div>
